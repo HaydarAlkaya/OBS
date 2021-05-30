@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DBDEBA29-248C-4972-8C65-FA85FDE8D488}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OBS</RootNamespace>
+    <AssemblyName>OBS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CourseConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseConfirmation.Designer.cs">
+      <DependentUpon>CourseConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devamsizlik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devamsizlik.Designer.cs">
+      <DependentUpon>Devamsizlik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Komut.cs" />
+    <Compile Include="OgrenciListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListe.Designer.cs">
+      <DependentUpon>OgrenciListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security.cs" />
+    <Compile Include="SqlConn.cs" />
+    <Compile Include="StudentAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAbsence.Designer.cs">
+      <DependentUpon>StudentAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentHomePage.Designer.cs">
+      <DependentUpon>StudentHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentLesson.Designer.cs">
+      <DependentUpon>StudentLesson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentLogin.Designer.cs">
+      <DependentUpon>StudentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherHomePage.Designer.cs">
+      <DependentUpon>TeacherHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherLogin.Designer.cs">
+      <DependentUpon>TeacherLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherLessons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherLessons.Designer.cs">
+      <DependentUpon>TeacherLessons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersNotes.Designer.cs">
+      <DependentUpon>TeachersNotes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CourseConfirmation.resx">
+      <DependentUpon>CourseConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devamsizlik.resx">
+      <DependentUpon>Devamsizlik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListe.resx">
+      <DependentUpon>OgrenciListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudentAbsence.resx">
+      <DependentUpon>StudentAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentHomePage.resx">
+      <DependentUpon>StudentHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLesson.resx">
+      <DependentUpon>StudentLesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentLogin.resx">
+      <DependentUpon>StudentLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherHomePage.resx">
+      <DependentUpon>TeacherHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherLogin.resx">
+      <DependentUpon>TeacherLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherLessons.resx">
+      <DependentUpon>TeacherLessons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersNotes.resx">
+      <DependentUpon>TeachersNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
